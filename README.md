@@ -8,7 +8,6 @@ An ionic number picker (spinner) which is developed in web technologies and ioni
 
 ## ScreenShots
 ![alt tag](/screenshots/screenshot1.gif)
-![alt tag](/screenshots/screenshot2.gif)
 ![alt tag](/screenshots/screenshot3.png)
 
 ## Usage
