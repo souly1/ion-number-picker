@@ -6,6 +6,11 @@ An ionic number picker (spinner) which is developed in web technologies and ioni
 
 - Ionic 1.*
 
+## ScreenShots
+![alt tag](/screenshots/screenshot1.gif)
+![alt tag](/screenshots/screenshot2.gif)
+![alt tag](/screenshots/screenshot3.png)
+
 ## Usage
 
 - Add CSS and JS to project:
@@ -54,6 +59,12 @@ Valid values:
  * `closeDrawer` - closes the number select drawer
  * `getCurrentSelection` - returns the current value displayed as selected in number select drawer
  * `isDrawerOpen` - is the drawer currently open or not
+
+## Purchase Link
+[ion-number-picker](https://gumroad.com/l/uEFnYz)
+
+## What's included
+Upon purchase you'll receive a minimized js file and minimized css for immediate use
 
 ## License
 Use only by person/business specified in payment for one or more end products
