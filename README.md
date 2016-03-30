@@ -33,16 +33,16 @@ You can now use the directive, add the attribute to your existing DOM element in
 
 ## Directive Attributes
 
-- `id (optional)` - Give a unique id the the bound element and drawer will be named {{id}}-drawer
-- `ng-model (optional)` - Define the model to bind the selected value to. the value of the model is displayed once drawer is open
-- `ng-change` - method called after the value has been set
-- `sensitivity (optional)` - Define the scroll sensitivity
-- `min` (optional) - define the first top value of the number selector. default is 1
-- `max` (optional) - define the last bottom value of the number selector. default is 100
-- `ngDefault` (optional) - if ng-model is null then number selector open on this number as selected
-- `step` (optional) - define the step between the first and last values. Can be a float number or negative value. default is 1
-- `control` (optional) - control element to control directive from outside (see notes for details)
-- `hasClear` (optional) - Whether drawer has clear button or not, if does value set to zero
+- `id (optional)` - Give a unique id the the bound element and drawer will be named {{id}}-drawer. Default is randomly generated id
+- `ng-model (optional)` - Define the model to bind the selected value to. the value of the model is displayed once drawer is open.
+- `ng-change (optional)` - method called after the value has been set
+- `sensitivity (optional)` - Define the scroll sensitivity. default is 0.17
+- `min` (optional) - define the first top value of the number selector. Default is 1
+- `max` (optional) - define the last bottom value of the number selector. Default is 100
+- `ngDefault` (optional) - if ng-model is null then number selector open on this number as selected. Default is minimum value
+- `step` (optional) - define the step between the first and last values. Can be a float number or negative value. Default is 1
+- `control` (optional) - control element to control directive from outside (see notes below for details)
+- `hasClear` (optional) - true/false Whether drawer has clear button or not, if does value set to null. Default is false.
 - `onSet` (optional) - event fired when set button clicked, model is set value. Has two params oldValue and newValue, If returning false from method set canceled. IMPORTANT: only pass method name without brackets
 - `onCancel` (optional) - event fired when cancel button clicked. IMPORTANT: only pass method name without brackets
 - `onClear` (optional) - event fired when clear button clicked. IMPORTANT: only pass method name without brackets
