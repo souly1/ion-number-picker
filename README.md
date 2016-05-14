@@ -4,7 +4,7 @@ An ionic number picker (spinner) which is developed in web technologies and ioni
 
 ## Requirements
 
-- Ionic 1.*
+- Works with Angular 1.*
 
 ## ScreenShots
 ![alt tag](/screenshots/screenshot1.gif)
