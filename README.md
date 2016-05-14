@@ -1,6 +1,6 @@
 # ion-number-picker
 
-An ionic number picker (spinner) which is developed in web technologies and ionic but looks similar to native.
+An ionic number picker (spinner) which is developed in web technologies and Angular but looks similar to native.
 
 ## Requirements
 
