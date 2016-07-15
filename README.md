@@ -1,6 +1,6 @@
 # ion-number-picker
 
-An ionic number picker (spinner) which is developed in web technologies and ionic but looks similar to native.
+An ionic number picker (spinner) which is developed in web technologies and Angular but looks similar to native.
 
 ## Requirements
 
@@ -60,7 +60,7 @@ Valid values:
  * `isDrawerOpen` - is the drawer currently open or not
 
 ## Purchase Link
-[ion-number-picker](https://gumroad.com/l/uEFnYz)
+[ion-number-picker](https://gum.co/uEFnY)
 
 ## What's included
 Upon purchase you'll receive a minimized js file and minimized css for immediate use
