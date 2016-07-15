@@ -4,7 +4,7 @@ An ionic number picker (spinner) which is developed in web technologies and ioni
 
 ## Requirements
 
-- Ionic 1.*
+- Angular 1.*
 
 ## ScreenShots
 ![alt tag](/screenshots/screenshot1.gif)
@@ -23,7 +23,7 @@ An ionic number picker (spinner) which is developed in web technologies and ioni
 Add dependencies on the `ion-number-picker` AngularJS module:
 
 ```javascript
-angular.module('myApp', ['ion-number-picker']);
+angular.module('myApp', ['ion-pickers']);
 ```
 
 You can now use the directive, add the attribute to your existing DOM element in HTML:
