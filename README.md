@@ -39,6 +39,7 @@ You can now use the directive, add the attribute to your existing DOM element in
 - `sensitivity (optional)` - Define the scroll sensitivity. default is 0.17
 - `min` (optional) - define the first top value of the number selector. Default is 1
 - `max` (optional) - define the last bottom value of the number selector. Default is 100
+- `openPartScreenDrawerBarrier (optional)` - define the device height in pixels where any value higher than it will open drawer partially and not full screen. use 0 to always open as parital drawer. default is 420px
 - `ngDefault` (optional) - if ng-model is null then number selector open on this number as selected. Default is minimum value
 - `step` (optional) - define the step between the first and last values. Can be a float number or negative value. Default is 1
 - `control` (optional) - control element to control directive from outside (see notes below for details)
