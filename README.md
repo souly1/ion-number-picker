@@ -44,6 +44,7 @@ You can now use the directive, add the attribute to your existing DOM element in
 - `step` (optional) - define the step between the first and last values. Can be a float number or negative value. Default is 1
 - `control` (optional) - control element to control directive from outside (see notes below for details)
 - `hasClear` (optional) - true/false Whether drawer has clear button or not, if does value set to null. Default is false.
+- `bindingStrategy` (optional) - Use different binding strategies to deal with large element list lag when opening drawer, can be set to one of the values: 'early'/'stages'/'regular' (see below). Default is "regular"
 - `onSet` (optional) - event fired when set button clicked, model is set value. Has two params oldValue and newValue, If returning false from method set canceled. IMPORTANT: only pass method name without brackets
 - `onCancel` (optional) - event fired when cancel button clicked. IMPORTANT: only pass method name without brackets
 - `onClear` (optional) - event fired when clear button clicked. IMPORTANT: only pass method name without brackets
@@ -54,6 +55,10 @@ You can now use the directive, add the attribute to your existing DOM element in
 Valid values:
 - Make sure you enter number values for start, end, and step.
 - Total number of elements is limited to 4000 for user experience considerations
+- `bindingStrategy` values:
+    'early' - will create and bind drawer immediately upon creating of directive, prior to any attempt to open drawer. Relevant only for first creation of directive instance
+    'stages' - will open drawer with disabled list on current element, and after the whole list is loaded scroll will become enabled. Relevant only for first open of specific drawer
+    'regular' - Default. Create whole list upon attempt to open drawer doing the heavy lifting then and make scrolling available immediately upon drawer open
 - Control methods which can be called:
  * `openDrawer` - opens the number select drawer
  * `closeDrawer` - closes the number select drawer
