@@ -44,6 +44,7 @@ You can now use the directive, add the attribute to your existing DOM element in
 - `step` (optional) - define the step between the first and last values. Can be a float number or negative value. Default is 1
 - `control` (optional) - control element to control directive from outside (see notes below for details)
 - `hasClear` (optional) - true/false Whether drawer has clear button or not, if does value set to null. Default is false.
+- `deleteOnClose` (optional) - Whether to remove DOM elements and event registration on close of drawer. Better user with many drawers that have a large number of elements Default is false
 - `bindingStrategy` (optional) - Use different binding strategies to deal with large element list lag when opening drawer, can be set to one of the values: 'early'/'stages'/'regular' (see below). Default is "regular"
 - `onSet` (optional) - event fired when set button clicked, model is set value. Has two params oldValue and newValue, If returning false from method set canceled. IMPORTANT: only pass method name without brackets
 - `onCancel` (optional) - event fired when cancel button clicked. IMPORTANT: only pass method name without brackets
@@ -64,6 +65,7 @@ Valid values:
  * `closeDrawer` - closes the number select drawer
  * `getCurrentSelection` - returns the current value displayed as selected in number select drawer
  * `isDrawerOpen` - is the drawer currently open or not
+ * `prepareDom` - use to manually issue a creation of DOM elements which can be costly. Does nothing if DOM element already exists. Do not use with 'early' binding strategy
 
 ## Purchase Link
 [ion-number-picker](https://gum.co/uEFnY)
